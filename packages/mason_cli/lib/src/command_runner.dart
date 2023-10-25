@@ -46,6 +46,7 @@ class MasonCommandRunner extends CompletionCommandRunner<int> {
     addCommand(UnbundleCommand(logger: _logger));
     addCommand(UpdateCommand(logger: _logger, pubUpdater: _pubUpdater));
     addCommand(UpgradeCommand(logger: _logger));
+    addCommand(WatchCommand(logger: _logger));
   }
 
   final Logger _logger;

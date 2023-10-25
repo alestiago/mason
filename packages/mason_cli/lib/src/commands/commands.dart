@@ -14,3 +14,4 @@ export 'search.dart';
 export 'unbundle.dart';
 export 'update.dart';
 export 'upgrade.dart';
+export 'watch.dart';
