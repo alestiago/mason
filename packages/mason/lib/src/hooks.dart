@@ -216,7 +216,9 @@ class GeneratorHooks {
       'dart',
       ['pub', 'get'],
       workingDirectory: workingDirectory,
-      runInShell: true,
+      // FIXME(alestiago): Temporarily disable to investigate failure:
+      // https://github.com/VGVentures/very_good_start/issues/1418
+      // runInShell: false,
     );
     if (result.exitCode != ExitCode.success.code) {
       throw HookDependencyInstallFailure(
